@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		638AD7F522F8ACD3005FA8B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638AD7F422F8ACD3005FA8B3 /* AppDelegate.swift */; };
-		638AD7F722F8ACD3005FA8B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638AD7F622F8ACD3005FA8B3 /* ViewController.swift */; };
-		638AD7FA22F8ACD3005FA8B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638AD7F822F8ACD3005FA8B3 /* Main.storyboard */; };
-		638AD7FC22F8ACD4005FA8B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638AD7FB22F8ACD4005FA8B3 /* Assets.xcassets */; };
-		638AD7FF22F8ACD4005FA8B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638AD7FD22F8ACD4005FA8B3 /* LaunchScreen.storyboard */; };
+		638AD81322F8AE27005FA8B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638AD81222F8AE27005FA8B3 /* AppDelegate.swift */; };
+		638AD81522F8AE27005FA8B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638AD81422F8AE27005FA8B3 /* ViewController.swift */; };
+		638AD81822F8AE27005FA8B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638AD81622F8AE27005FA8B3 /* Main.storyboard */; };
+		638AD81A22F8AE27005FA8B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638AD81922F8AE27005FA8B3 /* Assets.xcassets */; };
+		638AD81D22F8AE27005FA8B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638AD81B22F8AE27005FA8B3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		638AD7F122F8ACD3005FA8B3 /* AlarmProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		638AD7F422F8ACD3005FA8B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		638AD7F622F8ACD3005FA8B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		638AD7F922F8ACD3005FA8B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		638AD7FB22F8ACD4005FA8B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		638AD7FE22F8ACD4005FA8B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		638AD80022F8ACD4005FA8B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638AD80F22F8AE27005FA8B3 /* AlarmProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		638AD81222F8AE27005FA8B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		638AD81422F8AE27005FA8B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		638AD81722F8AE27005FA8B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		638AD81922F8AE27005FA8B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		638AD81C22F8AE27005FA8B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		638AD81E22F8AE27005FA8B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		638AD7EE22F8ACD3005FA8B3 /* Frameworks */ = {
+		638AD80C22F8AE27005FA8B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,31 +35,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		638AD7E822F8ACD3005FA8B3 = {
+		638AD80622F8AE26005FA8B3 = {
 			isa = PBXGroup;
 			children = (
-				638AD7F322F8ACD3005FA8B3 /* AlarmProject */,
-				638AD7F222F8ACD3005FA8B3 /* Products */,
+				638AD81122F8AE27005FA8B3 /* AlarmProject */,
+				638AD81022F8AE27005FA8B3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		638AD7F222F8ACD3005FA8B3 /* Products */ = {
+		638AD81022F8AE27005FA8B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				638AD7F122F8ACD3005FA8B3 /* AlarmProject.app */,
+				638AD80F22F8AE27005FA8B3 /* AlarmProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		638AD7F322F8ACD3005FA8B3 /* AlarmProject */ = {
+		638AD81122F8AE27005FA8B3 /* AlarmProject */ = {
 			isa = PBXGroup;
 			children = (
-				638AD7F422F8ACD3005FA8B3 /* AppDelegate.swift */,
-				638AD7F622F8ACD3005FA8B3 /* ViewController.swift */,
-				638AD7F822F8ACD3005FA8B3 /* Main.storyboard */,
-				638AD7FB22F8ACD4005FA8B3 /* Assets.xcassets */,
-				638AD7FD22F8ACD4005FA8B3 /* LaunchScreen.storyboard */,
-				638AD80022F8ACD4005FA8B3 /* Info.plist */,
+				638AD81222F8AE27005FA8B3 /* AppDelegate.swift */,
+				638AD81422F8AE27005FA8B3 /* ViewController.swift */,
+				638AD81622F8AE27005FA8B3 /* Main.storyboard */,
+				638AD81922F8AE27005FA8B3 /* Assets.xcassets */,
+				638AD81B22F8AE27005FA8B3 /* LaunchScreen.storyboard */,
+				638AD81E22F8AE27005FA8B3 /* Info.plist */,
 			);
 			path = AlarmProject;
 			sourceTree = "<group>";
@@ -67,13 +67,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		638AD7F022F8ACD3005FA8B3 /* AlarmProject */ = {
+		638AD80E22F8AE27005FA8B3 /* AlarmProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 638AD80322F8ACD4005FA8B3 /* Build configuration list for PBXNativeTarget "AlarmProject" */;
+			buildConfigurationList = 638AD82122F8AE27005FA8B3 /* Build configuration list for PBXNativeTarget "AlarmProject" */;
 			buildPhases = (
-				638AD7ED22F8ACD3005FA8B3 /* Sources */,
-				638AD7EE22F8ACD3005FA8B3 /* Frameworks */,
-				638AD7EF22F8ACD3005FA8B3 /* Resources */,
+				638AD80B22F8AE27005FA8B3 /* Sources */,
+				638AD80C22F8AE27005FA8B3 /* Frameworks */,
+				638AD80D22F8AE27005FA8B3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -81,25 +81,25 @@
 			);
 			name = AlarmProject;
 			productName = AlarmProject;
-			productReference = 638AD7F122F8ACD3005FA8B3 /* AlarmProject.app */;
+			productReference = 638AD80F22F8AE27005FA8B3 /* AlarmProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		638AD7E922F8ACD3005FA8B3 /* Project object */ = {
+		638AD80722F8AE26005FA8B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Blake kvarfordt";
 				TargetAttributes = {
-					638AD7F022F8ACD3005FA8B3 = {
+					638AD80E22F8AE27005FA8B3 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = 638AD7EC22F8ACD3005FA8B3 /* Build configuration list for PBXProject "AlarmProject" */;
+			buildConfigurationList = 638AD80A22F8AE26005FA8B3 /* Build configuration list for PBXProject "AlarmProject" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,54 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 638AD7E822F8ACD3005FA8B3;
-			productRefGroup = 638AD7F222F8ACD3005FA8B3 /* Products */;
+			mainGroup = 638AD80622F8AE26005FA8B3;
+			productRefGroup = 638AD81022F8AE27005FA8B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				638AD7F022F8ACD3005FA8B3 /* AlarmProject */,
+				638AD80E22F8AE27005FA8B3 /* AlarmProject */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		638AD7EF22F8ACD3005FA8B3 /* Resources */ = {
+		638AD80D22F8AE27005FA8B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				638AD7FF22F8ACD4005FA8B3 /* LaunchScreen.storyboard in Resources */,
-				638AD7FC22F8ACD4005FA8B3 /* Assets.xcassets in Resources */,
-				638AD7FA22F8ACD3005FA8B3 /* Main.storyboard in Resources */,
+				638AD81D22F8AE27005FA8B3 /* LaunchScreen.storyboard in Resources */,
+				638AD81A22F8AE27005FA8B3 /* Assets.xcassets in Resources */,
+				638AD81822F8AE27005FA8B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		638AD7ED22F8ACD3005FA8B3 /* Sources */ = {
+		638AD80B22F8AE27005FA8B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				638AD7F722F8ACD3005FA8B3 /* ViewController.swift in Sources */,
-				638AD7F522F8ACD3005FA8B3 /* AppDelegate.swift in Sources */,
+				638AD81522F8AE27005FA8B3 /* ViewController.swift in Sources */,
+				638AD81322F8AE27005FA8B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		638AD7F822F8ACD3005FA8B3 /* Main.storyboard */ = {
+		638AD81622F8AE27005FA8B3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				638AD7F922F8ACD3005FA8B3 /* Base */,
+				638AD81722F8AE27005FA8B3 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		638AD7FD22F8ACD4005FA8B3 /* LaunchScreen.storyboard */ = {
+		638AD81B22F8AE27005FA8B3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				638AD7FE22F8ACD4005FA8B3 /* Base */,
+				638AD81C22F8AE27005FA8B3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		638AD80122F8ACD4005FA8B3 /* Debug */ = {
+		638AD81F22F8AE27005FA8B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		638AD80222F8ACD4005FA8B3 /* Release */ = {
+		638AD82022F8AE27005FA8B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,7 +278,7 @@
 			};
 			name = Release;
 		};
-		638AD80422F8ACD4005FA8B3 /* Debug */ = {
+		638AD82222F8AE27005FA8B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -296,7 +296,7 @@
 			};
 			name = Debug;
 		};
-		638AD80522F8ACD4005FA8B3 /* Release */ = {
+		638AD82322F8AE27005FA8B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -317,25 +317,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		638AD7EC22F8ACD3005FA8B3 /* Build configuration list for PBXProject "AlarmProject" */ = {
+		638AD80A22F8AE26005FA8B3 /* Build configuration list for PBXProject "AlarmProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				638AD80122F8ACD4005FA8B3 /* Debug */,
-				638AD80222F8ACD4005FA8B3 /* Release */,
+				638AD81F22F8AE27005FA8B3 /* Debug */,
+				638AD82022F8AE27005FA8B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		638AD80322F8ACD4005FA8B3 /* Build configuration list for PBXNativeTarget "AlarmProject" */ = {
+		638AD82122F8AE27005FA8B3 /* Build configuration list for PBXNativeTarget "AlarmProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				638AD80422F8ACD4005FA8B3 /* Debug */,
-				638AD80522F8ACD4005FA8B3 /* Release */,
+				638AD82222F8AE27005FA8B3 /* Debug */,
+				638AD82322F8AE27005FA8B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 638AD7E922F8ACD3005FA8B3 /* Project object */;
+	rootObject = 638AD80722F8AE26005FA8B3 /* Project object */;
 }
