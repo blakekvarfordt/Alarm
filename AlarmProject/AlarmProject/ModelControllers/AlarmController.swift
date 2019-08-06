@@ -7,8 +7,44 @@
 //
 
 import Foundation
+import UserNotifications
 
-class AlarmController: Codable {
+
+protocol AlarmScheduler: class {
+    func scheduleUserNotifications(for alarm: Alarm)
+    func cancelUserNotifications(for alarm: Alarm)
+}
+
+extension AlarmScheduler {
+    func scheduleUserNotifications(for alarm: Alarm) {
+        let content = UNMutableNotificationContent()
+        content.title = "Alarm"
+        content.body = "This is an alarm"
+        content.sound = UNNotificationSound.default
+        
+        var dateComponents = Calendar.current.dateComponents([.hour, .minute], from: alarm.fireDate)
+        dateComponents.second = 0
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+        let request = UNNotificationRequest(identifier: alarm.uuid, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request) { (error) in
+            if let error = error {
+                print("notification failed")
+                print(error.localizedDescription)
+                print(error)
+            }
+        }
+        
+    }
+    
+    func cancelUserNotifications(for alarm: Alarm) {
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [alarm.uuid])
+        
+    }
+}
+
+class AlarmController: Codable, AlarmScheduler {
     
     static let shared = AlarmController()
     
@@ -31,10 +67,16 @@ class AlarmController: Codable {
         guard let index = alarms.firstIndex(of: alarm) else { return }
         alarms.remove(at: index)
         saveToPersistence()
+        cancelUserNotifications(for: alarm)
     }
     
     func toggleEnabled(for alarm: Alarm) {
         alarm.enabled.toggle()
+        if !alarm.enabled {
+            scheduleUserNotifications(for: alarm)
+        } else {
+            cancelUserNotifications(for: alarm)
+        }
     }
     
     func fileURL() -> URL {
@@ -64,7 +106,6 @@ class AlarmController: Codable {
             print("Error decoding alarms")
         }
     }
-    
-    
-    
 }
+
+

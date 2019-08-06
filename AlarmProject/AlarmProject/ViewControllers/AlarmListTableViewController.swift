@@ -49,7 +49,7 @@ class AlarmListTableViewController: UITableViewController {
         if editingStyle == .delete {
             let alarm = AlarmController.shared.alarms[indexPath.row]
             AlarmController.shared.delete(alarm: alarm)
-            tableView.reloadRows(at: [indexPath], with: .automatic)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
             
         }
     }

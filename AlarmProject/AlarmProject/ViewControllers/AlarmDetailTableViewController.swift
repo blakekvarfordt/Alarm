@@ -47,6 +47,7 @@ class AlarmDetailTableViewController: UITableViewController {
         } else {
             AlarmController.shared.addAlarm(fireDate: datePicker.date, name: textFieldText, enabled: alarmIsOn)
         }
+        navigationController?.popViewController(animated: true)
     }
     
 
