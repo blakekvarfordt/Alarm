@@ -14,17 +14,17 @@ class AlarmController {
     
     var alarms = [Alarm]()
     
-    init() {
-        let mockAlarms: [Alarm] = {
-            return [
-                Alarm(fireDate: Date(), name: "Class", enabled: false),
-                Alarm(fireDate: Date(), name: "Dinner", enabled: false),
-                Alarm(fireDate: Date(), name: "Bowling", enabled: false),
-                Alarm(fireDate: Date(), name: "TV Show", enabled: false)
-            ]
-        }()
-        alarms = mockAlarms
-    }
+//    init() {
+//        let mockAlarms: [Alarm] = {
+//            return [
+//                Alarm(fireDate: Date(), name: "Class", enabled: false),
+//                Alarm(fireDate: Date(), name: "Dinner", enabled: false),
+//                Alarm(fireDate: Date(), name: "Bowling", enabled: false),
+//                Alarm(fireDate: Date(), name: "TV Show", enabled: false)
+//            ]
+//        }()
+//        alarms = mockAlarms
+//    }
     
     func addAlarm(fireDate: Date, name: String, enabled: Bool) {
         let alarm = Alarm(fireDate: fireDate, name: name, enabled: enabled)
@@ -43,10 +43,6 @@ class AlarmController {
     }
     
     func toggleEnabled(for alarm: Alarm) {
-        if alarm.enabled == true {
-            alarm.enabled = true
-        } else {
-            alarm.enabled = false
-        }
+        alarm.enabled.toggle()
     }
 }

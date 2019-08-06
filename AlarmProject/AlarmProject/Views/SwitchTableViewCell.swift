@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol SwitchTableViewCellDelegate {
+protocol SwitchTableViewCellDelegate: class {
     func switchCellSwitchValueChanged(cell: SwitchTableViewCell)
 }
 
@@ -18,7 +18,7 @@ class SwitchTableViewCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var alarmSwitch: UISwitch!
     
-    var delegate: SwitchTableViewCellDelegate?
+    weak var delegate: SwitchTableViewCellDelegate?
     
     var alarm: Alarm? {
         didSet {

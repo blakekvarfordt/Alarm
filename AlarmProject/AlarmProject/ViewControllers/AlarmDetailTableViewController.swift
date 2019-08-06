@@ -10,6 +10,13 @@ import UIKit
 
 class AlarmDetailTableViewController: UITableViewController {
 
+    var alarmIsOn: Bool = true
+    
+    var alarm: Alarm? {
+        didSet {
+            updateViews()
+        }
+    }
     
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var textFieldLabel: UITextField!
@@ -19,35 +26,27 @@ class AlarmDetailTableViewController: UITableViewController {
         super.viewDidLoad()
 
     }
-
-    // MARK: - Table view data source
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        return cell
+    
+    private func updateViews() {
+        loadViewIfNeeded()
+        guard let alarm = alarm else { return }
+        datePicker.date = alarm.fireDate
+        textFieldLabel.text = alarm.name 
+         
     }
     
     // MARK: - Actions
     @IBAction func enableButtonTapped(_ sender: Any) {
+        
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
-    }
-    
-    
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        guard let textFieldText = textFieldLabel.text else { return }
+        if let alarm = alarm {
+            AlarmController.shared.update(alarm: alarm, fireDate: datePicker.date, name: textFieldText, enabled: alarmIsOn)
+        } else {
+            AlarmController.shared.addAlarm(fireDate: datePicker.date, name: textFieldText, enabled: alarmIsOn)
+        }
     }
     
 

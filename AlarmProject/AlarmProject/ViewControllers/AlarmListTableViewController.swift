@@ -10,9 +10,18 @@ import UIKit
 
 class AlarmListTableViewController: UITableViewController {
     
+    
+    var alarm: Alarm?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     
     // MARK: - Table view data source
     
@@ -23,6 +32,9 @@ class AlarmListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as? SwitchTableViewCell else { return UITableViewCell()}
+        
+        cell.delegate = self
+        
         
         let alarm = AlarmController.shared.alarms[indexPath.row]
         
@@ -45,7 +57,14 @@ class AlarmListTableViewController: UITableViewController {
         
         
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+            if segue.identifier == "ToAlarmDetailView" {
+                if let destination = segue.destination as? AlarmDetailTableViewController {
+                    if let indexPath = tableView.indexPathForSelectedRow {
+                        let alarm = AlarmController.shared.alarms[indexPath.row]
+                        destination.alarm = alarm
+                    }
+                }
+            }
     }
 }
 
@@ -57,3 +76,4 @@ extension AlarmListTableViewController: SwitchTableViewCellDelegate {
         tableView.reloadRows(at: [indexPath], with: .automatic)
     }
 }
+
